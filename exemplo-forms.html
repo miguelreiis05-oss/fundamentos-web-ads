@@ -78,16 +78,15 @@
     </footer>
 
     <script>
-    
-        document.getElementById('registerForm').addEventListener('submit',function(event){
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const nome = documet.getElementById('nome').value
-            const cpf = document.getElementById('cpf').value
-            const password = document.getElementById('senha').value
-            alert('Olá '+nome+' o formulário foi preenchido');
-            alert('Cadastro recebido!\nNome: ${nome}\nCPF: ${cpf}\nE-mail: ${email}')        })
-    
+            const nome = document.getElementById('nome').value;
+            const cpf = document.getElementById('cpf').value;
+            const email = document.getElementById('email').value;
+
+            alert(`Cadastro recebido!\nNome: ${nome}\nCPF: ${cpf}\nE-mail: ${email}`);
+        });
     </script>
     
 </body>
